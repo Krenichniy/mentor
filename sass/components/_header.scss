@@ -1,0 +1,33 @@
+header {
+  padding-top: 280px;
+
+  background-image: url(../images/cleaner@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/cleaner@2x.jpg);
+  }
+}
+
+.logo-button {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  &__link {
+  }
+
+  &__btn {
+    @include font(18px, 700, 1.16, #fff);
+    background-color: $accent-color;
+    padding: 20px 100px;
+    border: 1px solid #fff;
+
+    border-radius: 4px;
+  }
+}
